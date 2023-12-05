@@ -41,8 +41,8 @@ public class Soal_8 {
 
     public static void main(String[] args) {
         // Membuat contoh akun pengguna
-        AkunPengguna pengguna1 = new AkunPengguna("john_doe", "password123");
-        AkunPengguna pengguna2 = new AkunPengguna("jane_smith", "pass456");
+        AkunPengguna pengguna1 = new AkunPengguna("atrinlinggau", "crislampung");
+        AkunPengguna pengguna2 = new AkunPengguna("zidanjakabaring", "rahmatkenten");
 
         // Menambahkan akun ke dalam map
         akunPengguna.put(pengguna1.getUsername(), pengguna1);
