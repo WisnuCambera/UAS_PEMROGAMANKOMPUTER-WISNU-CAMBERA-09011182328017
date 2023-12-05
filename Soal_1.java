@@ -29,7 +29,7 @@ public class Soal_1 {
 
             // Tampilkan total harga setelah diskon
             System.out.println("Total harga setelah diskon: " + totalHargaSetelahDiskon);
-        }
+ }
 
-    }
+}
 }
