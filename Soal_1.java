@@ -2,35 +2,34 @@ import java.util.Scanner;
 
 public class Soal_1 {
     public static void main(String[] args) {
-        // Harga barang per item
-        double hargaBarang = 50.0;
+        try (Scanner scanner = new Scanner(System.in)) {
+            // Input jumlah pembelian
+            System.out.print("Masukkan jumlah barang yang dibeli : ");
+            int jumlahBarang = scanner.nextInt();
 
-        // Meminta pengguna memasukkan jumlah barang yang dibeli
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Masukkan jumlah barang yang dibeli: ");
-        int jumlahBarang = scanner.nextInt();
+            // Input harga per barang
+            System.out.print("Masukkan harga per barang : ");
+            double hargaPerBarang = scanner.nextDouble();
 
-        // Menghitung total harga tanpa diskon
-        double totalHarga = jumlahBarang * hargaBarang;
+            // Hitung total harga sebelum diskon
+            double totalHarga = jumlahBarang * hargaPerBarang;
 
-        // Menghitung diskon berdasarkan jumlah barang yang dibeli
-        double diskon = 0.0;
-        if (jumlahBarang >= 5 && jumlahBarang <= 10) {
-            diskon = 0.05; // Diskon 5%
-        } else if (jumlahBarang >= 11 && jumlahBarang <= 20) {
-            diskon = 0.1; // Diskon 10%
-        } else if (jumlahBarang > 20) {
-            diskon = 0.2; // Diskon 20%
-        }
+            // Hitung diskon berdasarkan jumlah pembelian
+            double diskon = 0.0;
+            if (jumlahBarang >= 5 && jumlahBarang <= 10) {
+                diskon = 0.05; // Diskon 5%
+            } else if (jumlahBarang >= 11 && jumlahBarang <= 20) {
+                diskon = 0.1; // Diskon 10%
+            } else if (jumlahBarang > 20) {
+                diskon = 0.2; // Diskon 20%
+            }
 
-        // Menghitung total harga setelah diskon
-        double totalHargaSetelahDiskon = totalHarga - (totalHarga * diskon);
+            // Hitung total harga setelah diskon
+            double totalHargaSetelahDiskon = totalHarga - (totalHarga * diskon);
 
-        // Menampilkan total harga setelah diskon
-        System.out.println("Total harga setelah diskon: Rp " + totalHargaSetelahDiskon);
+            // Tampilkan total harga setelah diskon
+            System.out.println("Total harga setelah diskon: " + totalHargaSetelahDiskon);
+        }
 
-        // Menutup scanner
-        scanner.close();
-
-    }
+    }
 }
