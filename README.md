@@ -1,2 +1,7 @@
 # UAS_PEMROGAMANKOMPUTER-WISNU-CAMBERA-09011182328017
 UAS pemrogaman SK1B 
+nama wisnu cambera
+kelas sk1b
+nim 09011182328017
+Absen 6
+Tanggal 05 12 2023
